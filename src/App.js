@@ -8,43 +8,39 @@ import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
-  const [shahzadsThings, setShazadsThings] = useState([
+  const [cattsThings, setCattsThings] = useState([
     {
-      name: 'functional programming',
-      image: 'https://imgs.xkcd.com/comics/functional.png',
-      attributes: ['efficient', 'reusability', 'not a taco', 'beautiful'],
+      name: 'bkr water bottle',
+      image: 'https://m.media-amazon.com/images/I/51HSFG9SGjL._SL1500_.jpg',
+      attributes: ['reusability', 'girly', '500ml', 'beautiful'],
     },
     {
-      name: 'React hooks',
+      name: 'Nespresso Machine',
       image:
-        'https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+        'https://m.media-amazon.com/images/I/71PEOpQgLUL._AC_SX466_.jpg',
       attributes: [
-        'useEffect',
-        'useState',
-        'not a taco',
-        "state's best friend",
+        'necessary for coding',
+        'non-watery coffee',
+        'Italian',
       ],
     },
     {
-      name: 'BluBlockers',
+      name: 'Fjallraven Kanken',
       image:
-        'https://susanmaryetta.files.wordpress.com/2011/06/blublocker-the-hangover.png?w=584',
+        'https://cdn.shopify.com/s/files/1/0213/4654/products/fjallraven-kanken-backpack-bags-packs-fjallraven-navy-647891_2000x.jpg?v=1599842964',
       attributes: [
-        'very attractive',
-        'useful probably!',
-        'good for viewing tacos',
-        'such hip',
-        'worn by all the cool kids',
+        'really useful',
+        'lasts long',
+        'good for posture',
       ],
     },
     {
-      name: 'Healthy food',
-      image: 'https://i.imgur.com/gRxOxsA.jpg',
+      name: 'Cracking the Coding Interview',
+      image: 'https://images-na.ssl-images-amazon.com/images/I/41oYsXjLvZL._SX348_BO1,204,203,200_.jpg',
       attributes: [
-        'makes you live a long time',
-        'consistent poops',
-        'probably tacos sometimes!',
-        'farm to market',
+        'helps you get a job',
+        'really hard algorithm questions',
+        'hope I can get them right',
       ],
     },
   ])
@@ -135,7 +131,7 @@ const App = () => {
       <Route path="/" element={<Landing />} />
       <Route
         path="/the-functional-things"
-        element={<FunctionalThings things={shahzadsThings} />}
+        element={<FunctionalThings things={cattsThings} />}
       />
       <Route
         path="/the-manliest-things"

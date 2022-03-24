@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import ManliestThings from './pages/ManliestThings/ManliestThings'
+import MilesThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
@@ -49,7 +49,7 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [chrisThings, setchrisThings] = useState([
     {
       name: 'banana',
       image:
@@ -139,7 +139,7 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<MilesThings things={chrisThings} />}
       />
       <Route
         path="/the-well-styled-things"
